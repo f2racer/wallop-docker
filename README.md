@@ -12,5 +12,5 @@ FFmpeg is available in Stretch, so there is no need to compile it. So unlike the
 `docker run --rm --name wallop -v $(pwd)/config.toml:/wallop/config/config.toml -p 8888:8888 ipstatic/wallop:latest`
 
 You will want to use a full path for your config.toml file. Ensure the [ffmpeg]
-section has the acodec key set to "libfdk_aac",  the ffmpeg_path key is set to
-"/ffmpeg/bin/ffmpeg" and the transcoding_path key is set to "/tmp".
+section has the acodec key set to "aac",  the ffmpeg_path key is set to
+"/usr/bin/ffmpeg" and the transcoding_path key is set to "/tmp".
