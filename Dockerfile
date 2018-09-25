@@ -10,10 +10,6 @@ RUN apt-get update \
   && bundle install --standalone --binstubs --local --path vendor/gems --quiet \
   && apt-get purge -y --auto-remove git
 
-#ADD scripts/start.sh /start.sh
-#EXPOSE 8888
-#CMD /start.sh
-
 WORKDIR /wallop
 VOLUME /tmp
 EXPOSE 8888
