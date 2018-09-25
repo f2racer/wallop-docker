@@ -1,9 +1,11 @@
 # Wallop
 
-A Docker image with [Wallop](https://github.com/maddox/wallop) and the latest
-[FFmpeg](https://ffmpeg.org). FFmpeg has been compiled for optimal performance on
-Apple platforms (OS X and iOS) by using the libfdk_aac audio codec instead of the
-generic AAC one.
+A Docker image with [Wallop](https://github.com/maddox/wallop) and
+[FFmpeg](https://ffmpeg.org).
+
+## Differences
+
+FFmpeg is available in Stretch, so there is no need to compile it. So unlike the [original](https://github.com/ipstatic/wallop-docker) this uses [Ruby](https://hub.docker.com/_/ruby/).
 
 ## Usage
 
