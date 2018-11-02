@@ -3,7 +3,7 @@ FROM ruby:2.5-stretch
 MAINTAINER Teddy Wang <gm2racer@gmail.com>
 
 RUN apt-get update \
-  && apt-get install -y git ffmpeg\
+  && apt-get install -y git ffmpeg vim\
   && hash -r \
   && git clone -b channelsdirect --single-branch git://github.com/f2racer/wallop.git /wallop \
   && cd /wallop \
